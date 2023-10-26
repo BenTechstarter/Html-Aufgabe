@@ -6,7 +6,7 @@
     <title>Benedict's Portfolio</title>
 </head>
 <body>
-    <h1>Benedict</h1>
+    <h1>{{name}}</h1>
     <h2>Demnächst passabler IT-ler</h2>
     <ul>
         <li><a href="/home">Home</a></li>
@@ -21,11 +21,9 @@
             <h3>Skills</h3>
             <p>Mit diesen Tools und Sprachen arbeite ich jeden Tag</p>
             <ul>
-                <li>VSCode</li>
-                <li>CLI</li>
-                <li>Linux</li>
-                <li>Python</li>
-                <li>HTML</li>
+                {% for skill in skills%}
+                <li>{{skill}}</li>
+                {% endfor %}
             </ul>
         </section>
         <h3>Kontakt</h3>
